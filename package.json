@@ -1,0 +1,27 @@
+{
+  "name": "@journeyapps/carbon",
+  "license": "UNLICENSED",
+  "private": true,
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "workspaces": [
+    "carbon-*"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
+    "build": "tsc -b",
+    "build:libs": "tsc -b ./tsconfig.libs.json",
+    "watch": "yarn build --watch",
+    "test": "pnpm run -r test",
+    "test:coverage": "pnpm run -r test --coverage",
+    "clean": "tsc -b --clean && rm -rf **/dist",
+    "ncu": "ncu -u && pnpm recursive exec -- ncu -u"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.28.0",
+    "@babel/core": "^7.28.0",
+    "@babel/preset-typescript": "^7.27.1",
+    "typescript": "^5.8.3",
+    "prettier": "^3.6.2"
+  }
+}

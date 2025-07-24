@@ -1,0 +1,19 @@
+{
+  "name": "@journeyapps-labs/carbon-atom-builder",
+  "version": "0.0.2",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "dependencies": {
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-copy": "workspace:^",
+    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "@journeyapps/core-xml": "^5.0.4",
+    "@journeyapps/domparser": "^0.4.1"
+  }
+}

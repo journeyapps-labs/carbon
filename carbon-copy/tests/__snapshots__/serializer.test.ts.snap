@@ -1,0 +1,89 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Serialization tests > Should serialize an XML molecule 1`] = `
+"<?xml version="1.0" encoding="UTF-8"?>
+<carbon-molecule>
+    <atom type="program-start" id="0" x="0" y="0" />
+    <atom type="program-end" id="1" x="0" y="0">
+        <port name="END" linked-atom="0" linked-port="START" />
+    </atom>
+</carbon-molecule>
+"
+`;
+
+exports[`Serialization tests > should serialize a JSON molecule 1`] = `
+{
+  "annotations": [],
+  "atoms": [
+    {
+      "id": "0",
+      "type": "program-start",
+      "x": 0,
+      "y": 0,
+    },
+    {
+      "id": "1",
+      "type": "program-end",
+      "x": 0,
+      "y": 0,
+    },
+  ],
+  "links": [
+    {
+      "points": [],
+      "source": {
+        "atom_id": "0",
+        "port_key": "START",
+      },
+      "target": {
+        "atom_id": "1",
+        "port_key": "END",
+      },
+    },
+  ],
+}
+`;
+
+exports[`Serialization tests Should serialize an XML molecule 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>
+<carbon-molecule>
+    <atom type=\\"program-start\\" id=\\"0\\" x=\\"0\\" y=\\"0\\" />
+    <atom type=\\"program-end\\" id=\\"1\\" x=\\"0\\" y=\\"0\\">
+        <port name=\\"END\\" linked-atom=\\"0\\" linked-port=\\"START\\" />
+    </atom>
+</carbon-molecule>
+"
+`;
+
+exports[`Serialization tests should serialize a JSON molecule 1`] = `
+Object {
+  "annotations": Array [],
+  "atoms": Array [
+    Object {
+      "id": "0",
+      "type": "program-start",
+      "x": 0,
+      "y": 0,
+    },
+    Object {
+      "id": "1",
+      "type": "program-end",
+      "x": 0,
+      "y": 0,
+    },
+  ],
+  "links": Array [
+    Object {
+      "points": Array [],
+      "source": Object {
+        "atom_id": "0",
+        "port_key": "START",
+      },
+      "target": Object {
+        "atom_id": "1",
+        "port_key": "END",
+      },
+    },
+  ],
+}
+`;

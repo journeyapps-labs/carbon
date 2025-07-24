@@ -1,0 +1,17 @@
+{
+  "name": "@journeyapps-labs/carbon-testing",
+  "version": "0.0.2",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "dependencies": {
+    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "colors": "^1.4.0",
+    "lodash": "^4.17.21"
+  }
+}

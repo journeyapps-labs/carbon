@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<carbon-schema>
+
+  <runtime-atom label="Create user" key="CREATE_USER" action="$:createUser()">
+    <desc>Used to create a user</desc>
+  </runtime-atom>
+
+</carbon-schema>
