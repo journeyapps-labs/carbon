@@ -8,13 +8,14 @@
     "carbon-*"
   ],
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
     "build:ts": "tsc -b",
-    "watch": "yarn build --watch",
+    "clean": "tsc -b --clean && rm -rf **/dist",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
+    "ncu": "ncu -u && pnpm recursive exec -- ncu -u",
+    "release": "pnpm build:ts && pnpm changeset publish",
     "test": "pnpm run -r test",
     "test:coverage": "pnpm run -r test --coverage",
-    "clean": "tsc -b --clean && rm -rf **/dist",
-    "ncu": "ncu -u && pnpm recursive exec -- ncu -u"
+    "watch": "pnpm build --watch"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.28.0",
