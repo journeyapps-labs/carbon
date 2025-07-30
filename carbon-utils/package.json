@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/journeyapps-labs/carbon.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "main": "./dist/index.js",
   "typings": "./dist/@types/index",
   "dependencies": {
