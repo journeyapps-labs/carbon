@@ -18,6 +18,7 @@
     "watch": "pnpm build --watch"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.5",
     "@babel/preset-env": "^7.28.0",
     "@babel/core": "^7.28.0",
     "@babel/preset-typescript": "^7.27.1",
