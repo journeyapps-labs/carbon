@@ -1,0 +1,32 @@
+{
+  "name": "@journeyapps-labs/carbon-ui",
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "scripts": {
+    "start": "./node_modules/.bin/start-storybook -c stories/.storybook"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.14.1",
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "lodash": "^4.17.21",
+    "react": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "react-dom": "19.1.0",
+    "@types/node": "^24.1.0"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./carbon-atom-builder"
+    },
+    {
+      "path": "./carbon-utils"
+    },
+    {
+      "path": "./carbon-testing"
+    },
+    {
+      "path": "./carbon-core"
+    },
+    {
+      "path": "./carbon-fibre"
+    },
+    {
+      "path": "./carbon-elements"
+    },
+    {
+      "path": "./carbon-elements-ui"
+    },
+    {
+      "path": "./carbon-ui"
+    },
+    {
+      "path": "./carbon-ui-storm"
+    },
+    {
+      "path": "./carbon-demo"
+    },
+    {
+      "path": "./carbon-copy"
+    }
+  ]
+}

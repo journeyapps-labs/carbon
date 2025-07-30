@@ -1,0 +1,28 @@
+{
+  "name": "@journeyapps-labs/carbon-fibre",
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "dependencies": {
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-testing": "workspace:^",
+    "@journeyapps-labs/carbon-utils": "workspace:^"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "vitest": "^3.2.4"
+  },
+  "scripts": {
+    "test": "vitest"
+  }
+}

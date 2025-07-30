@@ -1,0 +1,32 @@
+{
+  "name": "@journeyapps-labs/carbon-elements",
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "main": "./dist/src/index.js",
+  "typings": "./dist/@types/src/index",
+  "dependencies": {
+    "@journeyapps-labs/carbon-copy": "workspace:^",
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-testing": "workspace:^",
+    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "lodash": "^4.17.21",
+    "luxon": "^3.7.1",
+    "vitest": "^3.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "@types/luxon": "^3.6.2"
+  },
+  "scripts": {
+    "test": "vitest"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "name": "@journeyapps-labs/carbon-demo",
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "scripts": {
+    "start": "./node_modules/.bin/start-storybook -c stories/.storybook"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fortawesome/fontawesome-svg-core": "^7.0.0",
+    "@fortawesome/free-solid-svg-icons": "^7.0.0",
+    "@fortawesome/react-fontawesome": "^0.2.3",
+    "@journeyapps-labs/carbon-atom-builder": "workspace:^",
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-elements": "workspace:^",
+    "@journeyapps-labs/carbon-elements-ui": "workspace:^",
+    "@journeyapps-labs/carbon-ui": "workspace:^",
+    "@journeyapps-labs/carbon-ui-storm": "workspace:^"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "^8.6.14",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/builder-webpack5": "^9.0.18",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^9.0.18",
+    "@storybook/theming": "^8.6.14",
+    "@types/node": "^24.1.0",
+    "@types/react": "19.1.8",
+    "@types/react-dom": "^19.1.6",
+    "react-dom": "19.1.0",
+    "source-map-loader": "^5.0.0",
+    "webpack": "^5.100.2"
+  }
+}
