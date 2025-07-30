@@ -1,6 +1,6 @@
 {
   "name": "@journeyapps/carbon",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "private": true,
   "version": "0.0.1",
   "author": "JourneyApps",
@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
-    "build": "tsc -b",
-    "build:libs": "tsc -b ./tsconfig.libs.json",
+    "build:ts": "tsc -b",
     "watch": "yarn build --watch",
     "test": "pnpm run -r test",
     "test:coverage": "pnpm run -r test --coverage",
