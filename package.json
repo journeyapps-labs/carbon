@@ -18,5 +18,10 @@
     "@babel/preset-typescript": "^7.27.1",
     "typescript": "^5.8.3",
     "prettier": "^3.6.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "19.1.1"
+    }
   }
 }

@@ -3,31 +3,21 @@ import styled from '@emotion/styled';
 import { BuiltInThemes } from '@journeyapps-labs/carbon-ui';
 import { SmartEditor } from './src/SmartEditor';
 
-namespace S {
-  export const Canvas = styled(SmartEditor)`
-    position: absolute;
-    height: 100%;
-    width: 100%;
-  `;
-}
+const Canvas = styled(SmartEditor)`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+`;
 
-export const Debug = ({ theme }) => {
-  return <S.Canvas carbonTheme={theme} />;
+const Debug = () => {
+  return <Canvas carbonTheme={BuiltInThemes.CYBER} />;
 };
 
-Debug.args = {
-  theme: BuiltInThemes.DARK
+// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+const meta = {
+  component: Debug
 };
 
-export default {
-  title: 'Program',
-  argTypes: {
-    theme: {
-      options: Object.values(BuiltInThemes),
-      control: { type: 'select' }
-    }
-  },
-  parameters: {
-    layout: 'fullscreen'
-  }
-};
+export default meta;
+
+export const Primary = {};

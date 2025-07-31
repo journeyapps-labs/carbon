@@ -5,6 +5,9 @@
       "path": "./carbon-atom-builder"
     },
     {
+      "path": "./carbon-atom-builder-runtime"
+    },
+    {
       "path": "./carbon-utils"
     },
     {

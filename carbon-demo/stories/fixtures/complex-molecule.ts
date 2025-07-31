@@ -19,6 +19,7 @@ import {
   setupPortFactory,
   ValueType
 } from '@journeyapps-labs/carbon-elements';
+import { CustomCarbonRuntimeAtom, CustomCarbonRuntimeAtomSchema } from '@journeyapps-labs/carbon-atom-builder-runtime';
 
 export class SimpleTestNumberAtom extends SimpleAtom {
   static NUMBER_IN = 'number-in';
@@ -52,6 +53,17 @@ export const createMolecule = () => {
 
   const portFactory = new PortFactory();
   setupPortFactory(portFactory);
+
+  // runtime atoms
+  schema.registerAtomSchema(
+    new CustomCarbonRuntimeAtomSchema({
+      portFactory: portFactory,
+      executeFunction: async ({ func }) => {
+        console.log(`executing fn: ${func}`);
+        return {};
+      }
+    })
+  );
 
   const src = require('./schema.xml');
   const model = schema.parse(src);
@@ -114,6 +126,10 @@ export const createMolecule = () => {
   atom_numeric_cond.getInPort(NumericConditionAtom.PORT_IN).link(atom_simple_3.getOutPort(SimpleAtom.PORT_OUT));
   atom_join_2.getInPort(JoinAtom.PORT_IN_1).link(atom_numeric_cond.getOutPort(NumericConditionAtom.PORT_TRUE));
   atom_join_2.getInPort(JoinAtom.PORT_IN_2).link(atom_numeric_cond.getOutPort(NumericConditionAtom.PORT_FALSE));
+
+  atom_custom.getInPort(CustomCarbonRuntimeAtom.PORT_IN).link(atom_join_2.getOutPort(JoinAtom.PORT_OUT));
+
+  atom_end.getInPort(ProgramEndAtom.PORT_END).link(atom_custom.getOutPort(CustomCarbonRuntimeAtom.PORT_OUT));
 
   // add in reverse order, so we can test the correct order
   molecule.addAtom(atom_start);
