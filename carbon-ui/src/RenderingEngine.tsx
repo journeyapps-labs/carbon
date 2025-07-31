@@ -22,8 +22,6 @@ import {
 import { BooleanDropDownItem, DropDownItem, InputType, RenderingEngineContext } from './RenderingEngineContext';
 import { MouseEvent } from 'react';
 
-const annotation = require('../media/text-annotation.png');
-
 export interface RenderingEngineListener extends BaseListener {
   themeChanged: () => any;
   programChanged: () => any;
@@ -78,7 +76,7 @@ export abstract class RenderingEngine extends BaseObserver<RenderingEngineListen
   async renderElementForTray(options: { factory: ElementFactory }): Promise<RenderedTrayElement> {
     if (options.factory.type === TextAnnotationElementFactory.TYPE) {
       return {
-        element: <img src={annotation} />,
+        element: <img src={require('../media/text-annotation.png')} />,
         height: 50
       };
     }

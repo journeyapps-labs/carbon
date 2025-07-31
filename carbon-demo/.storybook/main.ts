@@ -27,6 +27,10 @@ const config: StorybookConfig = {
         rules: [
           ...config.module.rules,
           {
+            test: /\.(woff|woff2|eot|ttf|otf|svg|png|gif|ico)$/,
+            type: 'asset/resource'
+          },
+          {
             test: /\.xml$/,
             type: 'asset/source'
           }

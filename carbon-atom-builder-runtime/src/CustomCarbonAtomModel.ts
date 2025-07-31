@@ -4,8 +4,7 @@ import { CustomCarbonRuntimeAtomSchema } from './CustomCarbonRuntimeAtomSchema';
 import { CustomCarbonRuntimeAtom } from './CustomCarbonRuntimeAtom';
 import { JsonElementSerializer, XmlAtomSerializer } from '@journeyapps-labs/carbon-copy';
 import { XMLElement, XMLDocument } from '@journeyapps/domparser';
-
-const custom = require('../media/cog.png');
+import { AtomImageAlignment } from '@journeyapps-labs/carbon-ui';
 
 export class CustomCarbonAtomModel extends AbstractCarbonAtomModel<CustomCarbonAtomFactory> {
   fn: string;
@@ -81,12 +80,12 @@ export class CustomCarbonAtomModel extends AbstractCarbonAtomModel<CustomCarbonA
         // fn: (atom: CustomCarbonRuntimeAtom) => {
         //   return atom.model.fn;
         // }
+      },
+      image: {
+        src: require('../media/cog.png'),
+        height: 50,
+        alignment: AtomImageAlignment.CENTER
       }
-      // image: {
-      //   src: custom,
-      //   height: 50,
-      //   alignment: AtomImageAlignment.CENTER
-      // }
     };
   }
 }
