@@ -2,11 +2,11 @@
   "name": "carbon",
   "private": true,
   "scripts": {
-    "build:ts": "tsc -b",
+    "build": "tsc -b",
     "clean": "tsc -b --clean && rm -rf **/dist",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
     "ncu": "ncu -u && pnpm recursive exec -- ncu -u",
-    "release": "pnpm build:ts && pnpm changeset publish",
+    "release": "pnpm build && pnpm changeset publish",
     "test": "pnpm run -r test",
     "test:coverage": "pnpm run -r test --coverage",
     "watch": "pnpm build --watch"
