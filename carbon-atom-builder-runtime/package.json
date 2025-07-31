@@ -1,6 +1,6 @@
 {
   "name": "@journeyapps-labs/carbon-atom-builder-runtime",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "JourneyApps",
   "license": "Apache-2.0",
   "repository": {
@@ -18,7 +18,7 @@
     "@journeyapps-labs/carbon-core": "workspace:^",
     "@journeyapps-labs/carbon-copy": "workspace:^",
     "@journeyapps-labs/carbon-ui": "workspace:^",
-    "@journeyapps-labs/carbon-utils":"workspace:^"
+    "@journeyapps-labs/carbon-utils": "workspace:^"
   },
   "devDependencies": {
     "@journeyapps-labs/carbon-testing": "workspace:^",
@@ -28,7 +28,6 @@
     "xmldom": "^0.6.0",
     "vitest": "^3.2.4"
   },
-
   "scripts": {
     "test": "vitest"
   }
