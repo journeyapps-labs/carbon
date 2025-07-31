@@ -1,12 +1,6 @@
 {
-  "name": "@journeyapps/carbon",
-  "license": "Apache-2.0",
+  "name": "carbon",
   "private": true,
-  "version": "0.0.1",
-  "author": "JourneyApps",
-  "workspaces": [
-    "carbon-*"
-  ],
   "scripts": {
     "build:ts": "tsc -b",
     "clean": "tsc -b --clean && rm -rf **/dist",
