@@ -37,22 +37,22 @@
     "lodash": "^4.17.21",
     "pathfinding": "^0.4.18",
     "paths-js": "^0.4.11",
-    "react": "19.1.0",
+    "react": "19.1.1",
     "resize-observer-polyfill": "^1.5.1",
     "typeface-open-sans": "^1.1.13"
   },
   "devDependencies": {
     "@storybook/addons": "^7.6.17",
-    "@storybook/builder-webpack5": "^9.0.18",
+    "@storybook/builder-webpack5": "^9.1.0",
     "@storybook/manager-webpack5": "^6.5.16",
-    "@storybook/react": "^9.0.18",
+    "@storybook/react": "^9.1.0",
     "@storybook/theming": "^8.6.14",
     "@types/color": "^4.2.0",
     "@types/lodash": "^4.17.20",
-    "@types/react": "19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "react-dom": "19.1.0",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "react-dom": "19.1.1",
     "source-map-loader": "^5.0.0",
-    "webpack": "^5.100.2"
+    "webpack": "^5.101.0"
   }
 }

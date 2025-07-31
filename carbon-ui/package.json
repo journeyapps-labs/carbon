@@ -21,12 +21,12 @@
     "@journeyapps-labs/carbon-core": "workspace:^",
     "@journeyapps-labs/carbon-utils": "workspace:^",
     "lodash": "^4.17.21",
-    "react": "19.1.0"
+    "react": "19.1.1"
   },
   "devDependencies": {
-    "@types/react": "19.1.8",
-    "@types/react-dom": "^19.1.6",
-    "react-dom": "19.1.0",
+    "@types/react": "19.1.9",
+    "@types/react-dom": "^19.1.7",
+    "react-dom": "19.1.1",
     "@types/node": "^24.1.0"
   }
 }

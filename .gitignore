@@ -7,3 +7,6 @@ dist-module
 pnpm-links.js
 .pnpm-debug.log
 coverage
+
+*storybook.log
+storybook-static

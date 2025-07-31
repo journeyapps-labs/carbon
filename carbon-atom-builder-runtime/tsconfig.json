@@ -1,0 +1,32 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "declarationDir": "dist/@types",
+    "rootDir": "src",
+    "outDir": "dist",
+    "tsBuildInfoFile": "dist/tsconfig.tsbuildinfo"
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "./dist"
+  ],
+  "references": [
+    {
+      "path": "../carbon-atom-builder"
+    },
+    {
+      "path": "../carbon-utils"
+    },
+    {
+      "path": "../carbon-core"
+    },
+    {
+      "path": "../carbon-ui"
+    },
+    {
+      "path": "../carbon-copy"
+    }
+  ]
+}

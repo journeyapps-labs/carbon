@@ -13,7 +13,11 @@ import { createMolecule } from '../fixtures/complex-molecule';
 import { BuiltInThemes } from '@journeyapps-labs/carbon-ui';
 import { BaseProgram, Program } from '@journeyapps-labs/carbon-core';
 import { generateEngine } from './ui';
-import { CARBON_DARK, CARBON_DARK_NEON, CARBON_LIGHT } from '@journeyapps-labs/carbon-ui';
+import {
+  CARBON_DARK_ELEMENTS,
+  CARBON_CYBER_ELEMENTS,
+  CARBON_LIGHT_ELEMENTS
+} from '@journeyapps-labs/carbon-elements-ui';
 
 export const CanvasSelector: React.FC<React.PropsWithChildren<{ program: BaseProgram; className?: any }>> = (props) => {
   if (props.program) {
@@ -49,9 +53,9 @@ export const SmartEditor: React.FC<SmartEditorProps> = (props) => {
   useEffect(() => {
     engine.setTheme(
       {
-        [BuiltInThemes.DARK]: CARBON_DARK,
-        [BuiltInThemes.CYBER]: CARBON_DARK_NEON,
-        [BuiltInThemes.LIGHT]: CARBON_LIGHT
+        [BuiltInThemes.DARK]: CARBON_DARK_ELEMENTS,
+        [BuiltInThemes.CYBER]: CARBON_CYBER_ELEMENTS,
+        [BuiltInThemes.LIGHT]: CARBON_LIGHT_ELEMENTS
       }[props.carbonTheme]
     );
     engine.reDistribute();

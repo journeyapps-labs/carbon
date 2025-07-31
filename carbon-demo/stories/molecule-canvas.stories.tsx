@@ -3,53 +3,35 @@ import { useEffect } from 'react';
 import { CarbonThemeContainerWidget, StormCarbonCanvasWidget } from '@journeyapps-labs/carbon-ui-storm';
 import styled from '@emotion/styled';
 import { createMolecule } from './fixtures/complex-molecule';
-import { BuiltInThemes, CARBON_DARK, CARBON_DARK_NEON } from '@journeyapps-labs/carbon-ui';
 import { generateEngine } from './src/ui';
-import { CARBON_CYBER_ELEMENTS, CARBON_DARK_ELEMENTS } from '@journeyapps-labs/carbon-elements-ui';
+import { CARBON_DARK_ELEMENTS } from '@journeyapps-labs/carbon-elements-ui';
 
-namespace S {
-  export const Canvas = styled(StormCarbonCanvasWidget)`
-    position: absolute;
-  `;
-}
+const Canvas = styled(StormCarbonCanvasWidget)`
+  position: absolute;
+`;
 
 const engine = generateEngine();
-
 const { molecule } = createMolecule();
 
-export const Comp = ({ theme }) => {
+const Comp = () => {
   useEffect(() => {
-    engine.setTheme(
-      {
-        Dark: CARBON_DARK_ELEMENTS,
-        Cyber: CARBON_CYBER_ELEMENTS
-      }[theme]
-    );
+    engine.setTheme(CARBON_DARK_ELEMENTS);
     setTimeout(() => {
       engine.reDistribute();
     }, 100);
-  }, [theme]);
+  }, []);
 
   return (
     <CarbonThemeContainerWidget engine={engine}>
-      <S.Canvas engine={engine} molecule={molecule} />
+      <Canvas engine={engine} molecule={molecule} />
     </CarbonThemeContainerWidget>
   );
 };
 
-Comp.args = {
-  theme: BuiltInThemes.DARK
+// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
+const meta = {
+  component: Comp
 };
 
-export default {
-  title: 'Program',
-  argTypes: {
-    theme: {
-      options: Object.values(BuiltInThemes),
-      control: { type: 'select' }
-    }
-  },
-  parameters: {
-    layout: 'fullscreen'
-  }
-};
+export default meta;
+export const Primary = {};

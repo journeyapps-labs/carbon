@@ -7,6 +7,11 @@ export const packages = [
     name: 'Carbon atom builder'
   },
   {
+    dir: '../carbon-atom-builder-runtime',
+    id: 'carbon-atom-builder-rumntime',
+    name: 'Carbon atom builder runtime'
+  },
+  {
     dir: '../carbon-copy',
     id: 'carbon-copy',
     name: 'Carbon copy'

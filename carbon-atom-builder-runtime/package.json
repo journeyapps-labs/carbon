@@ -1,0 +1,35 @@
+{
+  "name": "@journeyapps-labs/carbon-atom-builder-runtime",
+  "version": "0.0.1",
+  "author": "JourneyApps",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/journeyapps-labs/carbon.git"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "main": "./dist/index.js",
+  "typings": "./dist/@types/index",
+  "dependencies": {
+    "@journeyapps-labs/carbon-atom-builder": "workspace:^",
+    "@journeyapps-labs/carbon-core": "workspace:^",
+    "@journeyapps-labs/carbon-copy": "workspace:^",
+    "@journeyapps-labs/carbon-ui": "workspace:^",
+    "@journeyapps-labs/carbon-utils":"workspace:^"
+  },
+  "devDependencies": {
+    "@journeyapps-labs/carbon-testing": "workspace:^",
+    "@journeyapps/core-xml": "^5.0.4",
+    "@journeyapps/domparser": "^0.4.1",
+    "@types/node": "^24.1.0",
+    "xmldom": "^0.6.0",
+    "vitest": "^3.2.4"
+  },
+
+  "scripts": {
+    "test": "vitest"
+  }
+}

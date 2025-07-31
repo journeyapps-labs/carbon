@@ -53,7 +53,7 @@ jobs:
         run: pnpm install
 
       - name: Build Typescript
-        run: pnpm build:ts
+        run: pnpm build
 
       - name: Install docs dependencies
         run: cd docs && pnpm install
