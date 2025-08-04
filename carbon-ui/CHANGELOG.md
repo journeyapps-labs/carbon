@@ -1,5 +1,13 @@
 # @journeyapps-labs/carbon-ui
 
+## 0.0.3
+
+### Patch Changes
+
+- 5a95026: Move to common libs
+- Updated dependencies [5a95026]
+  - @journeyapps-labs/carbon-core@0.0.2
+
 ## 0.0.2
 
 ### Patch Changes
