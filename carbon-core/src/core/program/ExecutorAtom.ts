@@ -1,4 +1,3 @@
-import { BaseListener, BaseObserver, Logger } from '@journeyapps-labs/carbon-utils';
 import { ExecutorAtomContext } from './ExecutorAtomContext';
 import { Atom } from '../basic/Atom';
 import { FlowPort } from '../basic/FlowPort';
@@ -6,8 +5,10 @@ import { Invocation } from './Invocation';
 import { AttributePort } from '../basic/AttributePort';
 import { BaseProgram, ProgramStatus } from './BaseProgram';
 import { CompileEvent, CompileInterface } from './CompileInterface';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
+import { Logger } from '@journeyapps-labs/common-logger';
 
-export interface ExecutorAtomListener<T extends ExecutorAtomContext = ExecutorAtomContext> extends BaseListener {
+export interface ExecutorAtomListener<T extends ExecutorAtomContext = ExecutorAtomContext> {
   contextGenerated: (event: { context: T; invocation: Invocation }) => any;
   invocationGenerated: (event: { invocation: Invocation }) => any;
   pausedChanged: () => any;

@@ -1,4 +1,4 @@
-import { LoggerTransport, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { LoggerTransport, LogLevel } from '@journeyapps-labs/common-logger';
 import colors from 'colors/safe';
 import * as _ from 'lodash';
 

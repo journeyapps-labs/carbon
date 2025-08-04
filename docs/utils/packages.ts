@@ -45,10 +45,5 @@ export const packages = [
     dir: '../carbon-ui-storm',
     id: 'carbon-ui-storm',
     name: 'Carbon UI Storm'
-  },
-  {
-    dir: '../carbon-utils',
-    id: 'carbon-utils',
-    name: 'Carbon utils'
   }
 ] as Package[];

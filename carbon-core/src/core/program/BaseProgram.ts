@@ -1,10 +1,11 @@
-import { BaseListener, BaseObserver, ConsoleLoggerTransport, Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
+import { ConsoleLoggerTransport, Logger, LogLevel } from '@journeyapps-labs/common-logger';
 import { Molecule } from '../basic/Molecule';
 import { Atom } from '../basic/Atom';
 import { ExecutorAtom } from './ExecutorAtom';
 import { CompileEvent, CompileResult, CompileResultType } from './CompileInterface';
 
-export interface ProgramListener extends BaseListener {
+export interface ProgramListener {
   statusChanged: (event: { status: ProgramStatus; error?: Error }) => any;
 }
 

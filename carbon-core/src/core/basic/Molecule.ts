@@ -2,11 +2,11 @@ import { Atom } from './Atom';
 import { ParamAtom, ParamAtomFactory } from '../../elements/ParamAtom';
 import { OutputAtom, OutputAtomFactory } from '../../elements/OutputAtom';
 import { SetVariableAtom, SetVariableAtomFactory } from '../../elements/SetVariableAtom';
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 import { BaseElement } from './BaseElement';
 import { AnnotationElement } from '../../elements/annotation/AnnotationElement';
 
-export interface MoleculeListener extends BaseListener {
+export interface MoleculeListener {
   elementsUpdated: () => any;
 }
 

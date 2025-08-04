@@ -2,7 +2,7 @@ import { Molecule } from '../src/core/basic/Molecule';
 import { ProgramEndAtom } from '../src/elements/ProgramEndAtom';
 import { ExecutorAtomContext, Program } from '../src';
 import { SimpleTestNumberAtom } from './SimpleTestNumberAtom';
-import { Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { Logger, LogLevel } from '@journeyapps-labs/common-logger';
 import { ColourConsoleLoggerTransport } from '@journeyapps-labs/carbon-testing';
 import { describe, beforeEach, afterEach, it, expect } from 'vitest';
 

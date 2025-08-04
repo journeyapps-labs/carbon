@@ -10,7 +10,7 @@ import {
 } from '@journeyapps-labs/carbon-core';
 import { NumericCondition, NumericConditionAtom } from '../src/math/NumericConditionAtom';
 import { NumericConstantAtom } from '../src/constants/NumericConstantAtom';
-import { Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { Logger, LogLevel } from '@journeyapps-labs/common-logger';
 import { ColourConsoleLoggerTransport } from '@journeyapps-labs/carbon-testing';
 import { MathMaxAtom, NumericPort } from '../src';
 import { describe, beforeEach, afterEach, it, expect } from 'vitest';

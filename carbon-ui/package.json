@@ -19,7 +19,8 @@
   "dependencies": {
     "@emotion/styled": "^11.14.1",
     "@journeyapps-labs/carbon-core": "workspace:^",
-    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "@journeyapps-labs/common-utils": "^1.0.0",
+    "@journeyapps-labs/common-logger": "^1.0.0",
     "lodash": "^4.17.21",
     "react": "19.1.1"
   },

@@ -1,7 +1,7 @@
-import { FlowPort, Molecule, Program, ProgramEndAtom, ProgramStartAtom } from '@journeyapps-labs/carbon-core';
+import { Molecule, Program, ProgramEndAtom, ProgramStartAtom } from '@journeyapps-labs/carbon-core';
 import { ProgramTransmitter, RemoteProgram, SimpleTransponder } from '../src';
 import { ColourConsoleLoggerTransport, PrimaryConsoleColours } from '@journeyapps-labs/carbon-testing';
-import { Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { Logger, LogLevel } from '@journeyapps-labs/common-logger';
 import { describe, beforeEach, afterEach, it, expect } from 'vitest';
 
 describe('Flow tests', () => {

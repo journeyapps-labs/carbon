@@ -16,7 +16,8 @@
   "dependencies": {
     "@journeyapps-labs/carbon-core": "workspace:^",
     "@journeyapps-labs/carbon-testing": "workspace:^",
-    "@journeyapps-labs/carbon-utils": "workspace:^"
+    "@journeyapps-labs/common-utils": "^1.0.0",
+    "@journeyapps-labs/common-logger": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.1.0",

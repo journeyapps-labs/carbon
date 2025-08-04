@@ -21,9 +21,6 @@
       "path": "../carbon-copy"
     },
     {
-      "path": "../carbon-utils"
-    },
-    {
       "path": "../carbon-testing"
     }
   ]

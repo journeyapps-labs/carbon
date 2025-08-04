@@ -1,11 +1,11 @@
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 
 export interface TransponderEvent {
   signal: string;
   data: any;
 }
 
-export interface TransponderListener extends BaseListener {
+export interface TransponderListener {
   gotSignal: (event: TransponderEvent) => any;
 }
 

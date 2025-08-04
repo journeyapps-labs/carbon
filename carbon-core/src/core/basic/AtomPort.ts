@@ -2,7 +2,7 @@ import { Atom } from './Atom';
 import * as _ from 'lodash';
 import { CompileEvent, CompileInterface } from '../program/CompileInterface';
 import { CarbonEntity } from '../CarbonEntity';
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 
 export enum AtomPortType {
   IN = 'in',
@@ -20,7 +20,7 @@ export interface Point {
   y: number;
 }
 
-export interface AtomPortListener extends BaseListener {
+export interface AtomPortListener {
   willDelete: () => any;
   deleted: () => any;
   linkUpdated: () => any;

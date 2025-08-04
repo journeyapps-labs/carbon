@@ -1,4 +1,4 @@
-import { CarbonAtomSchema, getAttribute, getNodes } from '@journeyapps-labs/carbon-atom-builder';
+import { CarbonAtomSchema, getAttribute } from '@journeyapps-labs/carbon-atom-builder';
 import { CustomCarbonAtomModel } from './CustomCarbonAtomModel';
 import { XMLElement } from '@journeyapps/domparser';
 import { PortFactory } from '@journeyapps-labs/carbon-core';

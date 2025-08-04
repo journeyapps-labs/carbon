@@ -3,7 +3,7 @@ import { ProgramEventData, ProgramEvents } from './program-events';
 import { BaseProgram, CompileEvent, FlowPort, Invocation, Molecule } from '@journeyapps-labs/carbon-core';
 import { RemoteExecutorAtom } from './RemoteExecutorAtom';
 import { RemoteExecutorAtomContext } from './RemoteExecutorAtomContext';
-import { ConsoleLoggerTransport, Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { Logger, ConsoleLoggerTransport, LogLevel } from '@journeyapps-labs/common-logger';
 
 export interface RemoteProgramOptions {
   molecule: Molecule;

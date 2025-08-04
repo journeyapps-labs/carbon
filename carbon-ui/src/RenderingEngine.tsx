@@ -1,4 +1,3 @@
-import { BaseListener, BaseObserver, Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
 import { CARBON_DARK, CarbonTheme } from './theme/CarbonTheme';
 import * as _ from 'lodash';
 import * as React from 'react';
@@ -21,8 +20,10 @@ import {
 } from '@journeyapps-labs/carbon-core';
 import { BooleanDropDownItem, DropDownItem, InputType, RenderingEngineContext } from './RenderingEngineContext';
 import { MouseEvent } from 'react';
+import { Logger, LogLevel } from '@journeyapps-labs/common-logger';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 
-export interface RenderingEngineListener extends BaseListener {
+export interface RenderingEngineListener {
   themeChanged: () => any;
   programChanged: () => any;
   modelChanged: () => any;

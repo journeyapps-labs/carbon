@@ -17,9 +17,6 @@
       "path": "../carbon-core"
     },
     {
-      "path": "../carbon-utils"
-    },
-    {
       "path": "../carbon-testing"
     }
   ]
