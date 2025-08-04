@@ -11,7 +11,6 @@
   "main": "./dist/index.js",
   "typings": "./dist/@types/index",
   "scripts": {
-    "start": "./node_modules/.bin/start-storybook -c stories/.storybook",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
