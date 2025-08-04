@@ -16,7 +16,6 @@
   "dependencies": {
     "@journeyapps-labs/carbon-core": "workspace:^",
     "@journeyapps-labs/carbon-copy": "workspace:^",
-    "@journeyapps-labs/carbon-utils": "workspace:^",
     "@journeyapps/core-xml": "^5.0.4",
     "@journeyapps/domparser": "^0.4.1"
   }

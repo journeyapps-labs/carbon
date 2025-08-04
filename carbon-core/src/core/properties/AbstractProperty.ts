@@ -1,4 +1,4 @@
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 import { Atom } from '../basic/Atom';
 
 export interface AbstractPropertyOptions<V> {
@@ -8,7 +8,7 @@ export interface AbstractPropertyOptions<V> {
   value: V;
 }
 
-export interface AbstractPropertyListener extends BaseListener {
+export interface AbstractPropertyListener {
   propertyChanged: () => any;
 }
 

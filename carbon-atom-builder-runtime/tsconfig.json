@@ -17,9 +17,6 @@
       "path": "../carbon-atom-builder"
     },
     {
-      "path": "../carbon-utils"
-    },
-    {
       "path": "../carbon-core"
     },
     {

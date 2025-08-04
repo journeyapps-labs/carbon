@@ -17,7 +17,7 @@
     "@journeyapps-labs/carbon-copy": "workspace:^",
     "@journeyapps-labs/carbon-core": "workspace:^",
     "@journeyapps-labs/carbon-testing": "workspace:^",
-    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "@journeyapps-labs/common-logger": "^1.0.0",
     "lodash": "^4.17.21",
     "luxon": "^3.7.1",
     "vitest": "^3.2.4"

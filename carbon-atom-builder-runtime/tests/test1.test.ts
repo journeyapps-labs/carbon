@@ -11,7 +11,7 @@ import {
   ProgramStartAtom
 } from '@journeyapps-labs/carbon-core';
 import { CustomCarbonAtomFactory } from '../src/CustomCarbonAtomFactory';
-import { Logger, LogLevel } from '@journeyapps-labs/carbon-utils';
+import { Logger, LogLevel } from '@journeyapps-labs/common-logger';
 import { ColourConsoleLoggerTransport } from '@journeyapps-labs/carbon-testing';
 import { CustomCarbonRuntimeAtom } from '../src/CustomCarbonRuntimeAtom';
 import { describe, beforeEach, afterEach, it, expect } from 'vitest';

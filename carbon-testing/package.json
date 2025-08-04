@@ -14,7 +14,7 @@
   "main": "./dist/index.js",
   "typings": "./dist/@types/index",
   "dependencies": {
-    "@journeyapps-labs/carbon-utils": "workspace:^",
+    "@journeyapps-labs/common-logger": "^1.0.0",
     "colors": "^1.4.0",
     "lodash": "^4.17.21"
   }

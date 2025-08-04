@@ -1,9 +1,9 @@
 import { BaseProgram, ProgramStatus } from './BaseProgram';
 import { ExecutorAtomContext } from './ExecutorAtomContext';
 import { Molecule } from '../basic/Molecule';
-import { Logger } from '@journeyapps-labs/carbon-utils';
 import { CompileEvent } from './CompileInterface';
 import { AtomCompileError } from './AtomCompileError';
+import { Logger } from '@journeyapps-labs/common-logger';
 
 export interface ProgramOptions {
   logger?: Logger;

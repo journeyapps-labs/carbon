@@ -17,9 +17,6 @@
       "path": "../carbon-ui"
     },
     {
-      "path": "../carbon-utils"
-    },
-    {
       "path": "../carbon-fibre"
     }
   ]

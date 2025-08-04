@@ -8,9 +8,6 @@
       "path": "./carbon-atom-builder-runtime"
     },
     {
-      "path": "./carbon-utils"
-    },
-    {
       "path": "./carbon-testing"
     },
     {

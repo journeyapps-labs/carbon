@@ -15,9 +15,6 @@
   ],
   "references": [
     {
-      "path": "../carbon-utils"
-    },
-    {
       "path": "../carbon-testing"
     }
   ]

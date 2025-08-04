@@ -11,8 +11,5 @@
   ],
   "exclude": [
     "./dist"
-  ],
-  "references": [{
-    "path": "../carbon-utils"
-  }]
+  ]
 }

@@ -1,5 +1,5 @@
 import { DefaultPortModel, LinkModel } from '@projectstorm/react-diagrams';
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
+import { BaseObserver } from '@journeyapps-labs/common-utils';
 import { AtomPort, AtomPortType } from '@journeyapps-labs/carbon-core';
 import { CarbonStormEngine } from '../../CarbonStormEngine';
 
@@ -10,7 +10,7 @@ export const generatePortName = (port: AtomPort) => {
   return `out-${port.key}`;
 };
 
-export interface TypedPortModelListener extends BaseListener {
+export interface TypedPortModelListener {
   linkAdded: (link: LinkModel) => any;
   linkRemoved: (link: LinkModel) => any;
 }

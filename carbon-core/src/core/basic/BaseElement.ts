@@ -1,14 +1,14 @@
 import { Molecule } from './Molecule';
-import { BaseListener, BaseObserver } from '@journeyapps-labs/carbon-utils';
 import { v4 } from 'uuid';
 import { ElementFactory } from './ElementFactory';
+import { LockedObserver } from './LockedObserver';
 
-export interface BaseElementListener extends BaseListener {
+export interface BaseElementListener {
   deleted: () => any;
   moleculeUpdated: () => any;
 }
 
-export class BaseElement<L extends BaseElementListener = BaseElementListener> extends BaseObserver<L> {
+export class BaseElement<L extends BaseElementListener = BaseElementListener> extends LockedObserver<L> {
   _id: string;
   x: number;
   y: number;
